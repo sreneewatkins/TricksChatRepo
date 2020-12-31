@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins&display=swap');
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: white;
+}
+
+.chat-area, .home {
+  margin-top: 60px;
+}
+
+.chat-area {
+  padding: 20px;
+  height: 660px;
+  overflow-y: scroll;
+}
+
+.chat-area .chat-bubble {
+  background-color: rgb(240, 205, 210);
+  padding: 20px;
+  border-radius: 4px;
+  max-width: 300px;
+  word-wrap: break-word;
+}
+
+.chat-bubble .chat-time {
+  font-size: 12px;
+  color: #757575;
+  text-align: right;
+}
+
+.chat-area .chat-bubble.current-user {
+  margin-left: auto;
+  background-color: #afc9b0;
+}
+
+.form-control {
+  width: 60%;
+}
+
+.form-control:focus {
+  box-shadow: none;
+}
+
+.btn {
+  margin-top: 10px;
+}
+
+.btn-submit {
+  background-color: #2e7d32;
+  color: white;
+}
+
+button {
+    margin-top: 20px;
+    background-color: rgb(192, 247, 111);
+}
+
+@media screen and (max-width: 767px) {
+  .form-control {
+    width: 100%;
+  }
+
+  .chat-area .chat-bubble {
+    max-width: 250px;
+  }
+}
